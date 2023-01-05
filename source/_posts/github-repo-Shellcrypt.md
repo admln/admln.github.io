@@ -57,19 +57,25 @@ salsa20_cipher = Salsa20.new(key=key)
 return salsa20_cipher.encrypt(plaintext)
 ```
 
-
-
 ## 输出
 
-指定输出改变的不是加密后的SHELLCODE本身，只是变量格式，按照指定编程语言的变量声明方式输出出来而已：
+指定输出改变的不是加密后的SHELLCODE本身，只是变量格式，按照指定编程语言的变量声明方式输出出来而已 ：
 
-![](C:\Users\fengkb\AppData\Roaming\marktext\images\2023-01-05-15-31-52-image.png)
+{% asset_img 2023-01-05-15-31-52-image.png %}
 
 # 学习
 
 1. 几种加密算法和py实现方式；
 
-2. 动态执行函数的另外一种方式；
+2. 没用过的一种打印表达式；
+   
+   ```py
+   w = 2
+   print('%.2f' %w)
+   print(f'w = {w:.2f}')
+   ```
+
+3. 动态执行函数的另外一种方式；
    
    之前用过eval：
    
@@ -94,19 +100,12 @@ return salsa20_cipher.encrypt(plaintext)
    def test_method2():
        pass
    
-   
    #call
    method = "method2"
    self.__handlers[method]()
    ```
-
-3. 没用过另外一种打印表达式；
    
-   ```py
-   w = 2
-   print('%.2f' %w)
-   print(f'w = {w:.2f}')
-   ```
+   
 
 4. 简单if/else判断的单行使用方式；
    
